@@ -18,7 +18,7 @@ class c3ejercicio1{
             }
             System.out.println("La letra " + caracter + " aparece " + repeticion + " veces");
         }
-    };
+    }
 
 
     public static class Ejercicio1b {

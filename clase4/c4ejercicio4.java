@@ -5,7 +5,7 @@ Alumno: Carlos Romero
 */
 package ejercicios.clase4;
 
-class c4ejercicio1 {
+class c4ejercicio4 {
     public static void main(String[] args) {
 
     }

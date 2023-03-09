@@ -27,9 +27,9 @@ class c3ejercicio2 {
         String resultado = "";
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
-            if (Character.isLetter(letra)) {
+            //if (Character.isLetter(letra)) {
                 letra = (char) ((int) letra + desplazamiento);
-            }
+            //}
             resultado += letra;
         }
         return resultado;
@@ -39,9 +39,9 @@ class c3ejercicio2 {
         String resultado = "";
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
-            if (Character.isLetter(letra)) {
+            //if (Character.isLetter(letra)) {
                 letra = (char) ((int) letra - desplazamiento);
-            }
+            //}
             resultado += letra;
         }
         return resultado;
