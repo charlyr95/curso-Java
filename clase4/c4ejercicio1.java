@@ -3,9 +3,10 @@ ArgentinaPrograma 4.0
 Curso Inicial Java
 Alumno: Carlos Romero
 */
-package ejercicios.clase3;
+package ejercicios.clase4;
 
-class c3ejercicio1{
+class c4ejercicio1 {
+
     public static class Ejercicio1a {
         public static void main(String[] args) {
             String texto = "Hola, estoy aprendiendo Java en Argentina Programa 4.0";
@@ -18,8 +19,7 @@ class c3ejercicio1{
             }
             System.out.println("La letra " + caracter + " aparece " + repeticion + " veces");
         }
-    };
-
+    }
 
     public static class Ejercicio1b {
         public static void main(String[] args) {
@@ -52,8 +52,7 @@ class c3ejercicio1{
             }
         }
     }
-
-
+    
     public static class Ejercicio1c {
         public static void main(String[] args) {
             int[] numeros = {5, 12, 9, -4, -10, 0, 7, 10, 14, 3, -6, -3, 1, -1}; //Le paso un arreglo de enteros

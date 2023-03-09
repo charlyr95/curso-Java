@@ -3,11 +3,11 @@ ArgentinaPrograma 4.0
 Curso Inicial Java
 Alumno: Carlos Romero
 */
-package ejercicios.clase3;
+package ejercicios.clase4;
 
 import java.util.Scanner;
 
-class c3ejercicio2 {
+class c4ejercicio2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
