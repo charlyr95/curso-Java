@@ -35,7 +35,7 @@ package ejercicios.clase1;
  import org.jsoup.nodes.Element;
  import org.jsoup.select.Elements;
  
- class c2ejercicio2 {
+ class c1ejercicio2 {
  
      public static final String url = "https://www.afip.gob.ar/monotributo/categorias.asp";
  
