@@ -9,15 +9,15 @@ import java.io.*;
 
 class c4ejercicio3 {
     public static void main(String[] args) {
-        String archivoEntrada = "./ejercicios/clase4/entrada.txt";
+        /*String archivoEntrada = "./ejercicios/clase4/entrada.txt";
         String archivoSalida = "./ejercicios/clase4/salida.txt";
         elCodigoEnigma(true, 13, archivoEntrada, archivoSalida);
-
-        /* //Descomentar para testear
+*/
+         //Descomentar para testear
         String archivoEntrada = "./ejercicios/clase4/salida.txt";
         String archivoSalida = "./ejercicios/clase4/test.txt"; //Genero un nuevo archivo para verificar que se haya decodificado correctamente
         elCodigoEnigma(false, 13, archivoEntrada, archivoSalida);
-        */
+
 
     }
 

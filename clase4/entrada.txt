@@ -3,7 +3,3 @@ Este texto tiene que ser luego decodificado de igual manera.
 
 Una prueba de que esté correctamente decodificado 
 es viendo el archivo original
-
-oasdasd
-
-asdasdas
