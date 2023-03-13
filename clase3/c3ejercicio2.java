@@ -24,11 +24,34 @@ class c3ejercicio2 {
     }
 
     public static String codificar(String texto, int desplazamiento) {
+        String compare = " abcdefghijklmnñopqrstuvwxyz";
         String resultado = "";
+        int index;
+        int aux;
+        boolean mayus;
+
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
-            if (Character.isLetter(letra)) {
-                letra = (char) ((int) letra + desplazamiento);
+            mayus = Character.isUpperCase(letra);
+            letra = Character.toLowerCase(letra);
+            index = compare.indexOf(letra);
+            aux = index + desplazamiento;
+            if (mayus) {
+                if (index != -1) {
+                    while (aux >= compare.length()) {
+                        aux = aux - compare.length();
+                    }
+                    letra = compare.charAt(aux);
+                    letra = Character.toUpperCase(letra);
+                }
+            }
+            else {
+                if (index != -1) {
+                    while(aux >= compare.length()){
+                        aux = aux - compare.length();
+                    }
+                    letra = compare.charAt(aux);
+                }
             }
             resultado += letra;
         }
@@ -36,13 +59,37 @@ class c3ejercicio2 {
     }
 
     public static String decodificar(String texto, int desplazamiento) {
+        String compare = " abcdefghijklmnñopqrstuvwxyz";
         String resultado = "";
+        int index;
+        int aux;
+        boolean mayus;
+
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
-            if (Character.isLetter(letra)) {
-                letra = (char) ((int) letra - desplazamiento);
+            mayus = Character.isUpperCase(letra);
+            letra = Character.toLowerCase(letra);
+            index = compare.indexOf(letra);
+            aux = index - desplazamiento;
+            if (mayus) {
+                if (index != -1) {
+                    while (aux < 0) {
+                        aux = aux + compare.length();
+                    }
+                    letra = compare.charAt(aux);
+                    letra = Character.toUpperCase(letra);
+                }
+                resultado += letra;
             }
-            resultado += letra;
+            else {
+                if (index != -1) {
+                    while (aux < 0) {
+                        aux = aux + compare.length();
+                    }
+                    letra = compare.charAt(aux);
+                }
+                resultado += letra;
+            }
         }
         return resultado;
     }
