@@ -6,8 +6,12 @@ import java.util.List;
 public class Carrito {
     private List<ItemCarrito> items;
 
+    public Carrito(List<ItemCarrito> items) {
+        this.items = new ArrayList<ItemCarrito>();
+    }
+
     public Carrito() {
-        items = new ArrayList<ItemCarrito>();
+        this.items = new ArrayList<>();
     }
 
     public void agregarItem(ItemCarrito item) {

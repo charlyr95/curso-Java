@@ -12,14 +12,15 @@ class c5ejercicio2 {
     public static void main(String[] args) {
         Carrito carrito = new Carrito();
         try {
-            Scanner scanner = new Scanner(new File("archivo.csv"));
-            scanner.useDelimiter(",");
+            Scanner scanner = new Scanner(new File("./ejercicios/clase5/productos.csv"));
+            scanner.nextLine(); // salta los títulos
             while (scanner.hasNextLine()) {
-                int cantidad = scanner.nextInt();
-                double precioUnitario = scanner.nextDouble();
-                String producto = scanner.next().trim();
-                scanner.nextLine(); // saltar al siguiente línea
-                Producto p = new Producto(producto,precioUnitario,cantidad);
+                String linea = scanner.nextLine();
+                String[] datos = linea.split(",");
+                int cantidad = Integer.parseInt(datos[0]);
+                double precio = Double.parseDouble(datos[1]);
+                String producto = datos[2];
+                Producto p = new Producto(producto,precio);
                 ItemCarrito item = new ItemCarrito(p, cantidad);
                 carrito.agregarItem(item);
             }
