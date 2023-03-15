@@ -16,10 +16,9 @@ class c5ejercicio2 {
             scanner.nextLine(); // salta los títulos
             while (scanner.hasNextLine()) {
                 String linea = scanner.nextLine();
-                String[] datos = linea.split(",");
-                int cantidad = Integer.parseInt(datos[0]);
-                double precio = Double.parseDouble(datos[1]);
-                String producto = datos[2];
+                int cantidad = Integer.parseInt(linea.split(",")[0]);
+                double precio = Double.parseDouble(linea.split(",")[1]);
+                String producto = linea.split(",")[2];
                 Producto p = new Producto(producto,precio);
                 ItemCarrito item = new ItemCarrito(p, cantidad);
                 carrito.agregarItem(item);
